@@ -19,7 +19,7 @@ export const Column = styled.div``;
 export const Text = styled.p`
   margin: 0;
   padding-left: 8px;
-
+  color: black;
 `;
 
 export const Label = styled.label`

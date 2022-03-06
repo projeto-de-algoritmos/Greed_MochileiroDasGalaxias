@@ -1,5 +1,5 @@
 import React from "react";
-import SpaceCraftImage from '../../assets/spacecraft.png'
+import SpaceCraftImage from '../../assets/spaceship.png'
 
 import * as S from './styles'
 

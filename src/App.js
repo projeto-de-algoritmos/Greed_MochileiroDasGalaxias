@@ -16,6 +16,10 @@ function App() {
   }
 
   const generateResult = () => {
+    if(items.length === 0 ){
+      alert('Adicione os itens');
+      return;
+    }
     setResult(items);
   }
 
@@ -23,16 +27,17 @@ function App() {
     <S.Wrapper>
       <div>
         <ObjectForm addItem={addItem} />
-        <S.ItemsContainer>
+        {items.length > 0 && <S.ItemsContainer>
           {items.map((item) => <Item item={item} key={item.id} />)}
-        </S.ItemsContainer>
+        </S.ItemsContainer>}
       </div>
-      <div>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <SpaceCraft />
-        <S.Input type="number" value={maxWeight} onChange={(e) => setMaxWeight(parseInt(e.target.value))}/>
-        <S.Button onClick={() => generateResult()}>Gerar</S.Button>
+        <S.Input type="number" min={0} value={maxWeight} onChange={(e) => setMaxWeight(parseInt(e.target.value))}/>
+        <S.Button onClick={() => generateResult()}>Calcular</S.Button>
       </div>
       <S.ResultContainer>
+        {result.length === 0 && <p style={{ color: 'white'}}>Adicione os itens, o peso máximo que a nave consegue carregar e clique no botão calcular</p>}
         {result.map((item) => <Item item={item} key={item.id} />)}
       </S.ResultContainer>
     </S.Wrapper>
