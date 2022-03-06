@@ -4,9 +4,9 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   border: 1px solid;
-  border-color: black;
+  border-color: white;
+  padding: 16px;
   border-radius: 10px;
-  width: 10%;
   align-items: center;
 `
 
@@ -25,4 +25,6 @@ export const Button = styled.button`
 `
 
 export const Label = styled.label`
+  color: white;
+  font-weight: 600;
 `
