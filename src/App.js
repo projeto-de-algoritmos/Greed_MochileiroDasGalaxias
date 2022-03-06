@@ -2,6 +2,7 @@ import { useState } from "react";
 import Item from "./components/Items";
 import ObjectForm from "./components/ObjectForm";
 import SpaceCraft from "./components/SpaceCraft";
+import { knapSack } from './algorithm'
 
 import * as S from './styles';
 
@@ -20,7 +21,22 @@ function App() {
       alert('Adicione os itens');
       return;
     }
-    setResult(items);
+
+    const values = items.map(({ value }) => value);
+    const weights = items.map(({ weight }) => weight);
+    const names = items.map(({ name }) => name);
+    const ids = items.map(({ id }) => id); 
+
+    const res = knapSack(values, weights, items.length - 1, maxWeight, []);
+    const result = res[1].map((index) => {
+      return ({
+        id: ids[index],
+        name: names[index],
+        value: values[index],
+        weight: weights[index]
+      });
+     })
+    setResult(result);
   }
 
   return (
