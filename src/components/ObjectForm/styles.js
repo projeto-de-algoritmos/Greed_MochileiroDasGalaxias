@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
   border: 1px solid;
   border-color: white;
   padding: 16px;
@@ -14,6 +13,7 @@ export const Input = styled.input`
   border-radius: 10px;
   width: 100px;
   height: 30px;
+  margin-right: 8px;
 ` 
 export const Button = styled.button`
   background-color: green;
@@ -27,4 +27,5 @@ export const Button = styled.button`
 export const Label = styled.label`
   color: white;
   font-weight: 600;
+  margin-right: 5px;
 `
