@@ -43,7 +43,6 @@ export const Button = styled.button`
   }
 
 `
-
 export const ResultContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -62,3 +61,22 @@ export const ResultContainer = styled.div`
     font-weight: 500;
   }
 `; 
+
+export const Label = styled.div`
+  color: white;
+  font-weight: bold;
+`;
+
+export const Heading = styled.h1`
+  color: white;
+`
+
+export const StarshipContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`; 
+
+export const Desc = styled.p`
+  color: white;
+`
