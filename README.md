@@ -1,44 +1,45 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
 
 Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
  - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
 
-# NomedoProjeto
+# Greed - Mochileiro das Galáxias
 
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+
+**Número da Lista**: 3<br>
+**Conteúdo da Disciplina**: Greed Algorithms<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 16/0120918 |  Gabriel de Jesus Carvalho |
+| 18/0054554  |  	Paulo Batista |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+É um site que visa ajudar um mochileiro das galáxias a maxímizar os seus ganhos, otimizando seu trabalho, para que ele consiga carregar os itens que darão maior recompensa a ele, baseado na quantidade de peso que sua nave consegue carregar.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![print 1](./docs/img1.png)
+![print 2](./docs/img2.png)
+![print 3](./docs/img3.png)
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: JavaScript<br>
+**Framework**: React<br>
+Para rodar o projeto é necessário ter o [NodeJs](https://nodejs.org/en/) e o [Yarn](https://yarnpkg.com/) instalados.
+
+Para instalar as dependências: 
+
+```
+  yarn install
+```
+Para executar o projeto: 
+
+```
+  yarn start
+```
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
-
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+Basta adicionar os itens que deseja carregar, adicionar o peso máximo que a nave consegue carregar e clicar em calcular. Após isso o resultado será gerado ao lado.
 
 
 

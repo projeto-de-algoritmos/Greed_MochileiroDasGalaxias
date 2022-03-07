@@ -45,6 +45,7 @@ function App() {
         <S.Heading>Itens: </S.Heading>
         <ObjectForm addItem={addItem} />
         {items.length > 0 && <S.ItemsContainer>
+          <S.Clear onClick={() => setItems([])}>Limpar</S.Clear>
           {items.map((item) => <Item item={item} key={item.id} />)}
         </S.ItemsContainer>}
       </div>
