@@ -80,3 +80,11 @@ export const StarshipContainer = styled.div`
 export const Desc = styled.p`
   color: white;
 `
+
+export const Clear = styled.p`
+  color: white;
+  text-decoration: underline;
+  margin: 0px;
+  cursor: pointer;
+  align-self: flex-end;
+`
